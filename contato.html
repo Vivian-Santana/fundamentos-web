@@ -5,37 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
+    <link rel="stylesheet" href="assets/css/style.css"> 
 </head>
 <body>
-    <ul>
+
+    <ulid id ="menu">
         <li>
             <a href= "index.html"> Home </a>
         </li>
 
         <li>
-            <a href= "contato.html"> contato </a>
+            <a href= "contato.html"> Contato </a>
         </li>
     </ul>
-    <h1>Entre em contato comigo</h1>
+    <h1 class="center" >Entre em contato comigo</h1>
     <br>
     <br>
-    <form>
-        <label for="nome">Nome:</label> <br>
-        <input type="text" id= "nome">
-        <br>
-        <br>
-        
-            <label for="email">E-mail:</label> <br>
-            <input type="email" id= "email">
+
+    <div class="container ml-50">
+
+        <footer>
+
+            <div class ="container">
+                <a href="https://github.com/" target="_blank">
+                    <img class = "tm-social p-30" src="assets/img/placa-do-github.png" 
+                    alt="logo do github">
+                </a>
+                
+                <a href="https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2F" target="_blank">
+                <img class = "tm-social" src="assets/img/linkedin.png" alt="logo do linkedin">
+                </a>
+    
+            </div>
+            <p class="center">
+                Todos os direitos reservados: Vivian Santana &copy
+            </p>
+        </footer>
+
+       <div>
+        <h2>Envie uma mensagem:</h2>
+        <form>
+            <label for="nome">Nome:</label> <br>
+            <input type="text" id= "nome">
             <br>
             <br>
             
-                <label for="assunto">Assunto:</label> <br>
-                <textarea name="assunto" id="assunto" cols="60" rows="5"></textarea>
+                <label for="email">E-mail:</label> <br>
+                <input type="email" id= "email">
                 <br>
                 <br>
-                <BUTton>Enviar</BUTton>
-    </form>
+                
+                    <label for="assunto">Assunto:</label> <br>
+                    <textarea name="assunto" id="assunto" cols="60" rows="5"></textarea>
+                    <br>
+                    <br>
+                    <BUTton>Enviar</BUTton>
+        </form>
+    </div>
+
+    <div class="ml -50">
     <h2>Endereço:</h2>
     <p>Av. Paulista, 1000</p>
     <p>São Paulo - SP</p>
@@ -45,6 +73,8 @@
    style="border:0;" 
    allowfullscreen="" 
    loading="lazy"></iframe>">
+   </div>
+   
     
 </body>
 </html>
