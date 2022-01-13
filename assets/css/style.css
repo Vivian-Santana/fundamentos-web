@@ -35,7 +35,7 @@ p{
 }
 
 #menu li a:hover {
-    color:red
+    color:red;
 }
 .tm-social{
     width: 50px;
@@ -44,9 +44,8 @@ p{
 .p-30{
     padding: 30px;
 }
-.mb -50{
-    margin-bottom: 50px;
-}
+
+
 /*Estilos da página contato.html*/
 .ml-50{
     margin-left: 50px;
