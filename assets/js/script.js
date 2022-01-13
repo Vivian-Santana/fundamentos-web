@@ -6,7 +6,7 @@ por Nome: getElementByName()
 por Classe: getElementByClassName()
 por Seletor: querySelector()
 */
-let nome = window.document.getElementById('#nome')
+let nome = window.document.getElementById('nome')
 let email = document.querySelector('#email')
 let assunto = document.querySelector('#assunto')
 let nomeOk = false
@@ -19,23 +19,24 @@ email.style.width = '100%'
 function validaNome(){
     let txtNome = document.querySelector('#txtNome')
     if(nome.value.length< 3){
-        alert('nome invalido')
         txtNome.innerHTML = 'Nome inválido'
         txtNome.style.color = 'red'
+        nomeOk = false
     }else{ 
-        txt.innerHTML= 'Nome válido'
-        txt.style.color = 'green'
+        txtNome.innerHTML= 'Nome válido'
+        txtNome.style.color = 'green'
         nomeOk = true
     }
 }
 
 function
  validaEmail(){
-     let txtEmail = document.querySelector('#email')
+     let txtEmail = document.querySelector('#txtEmail')
 
-     if(email.value.indexOf('@') == -1 ||email.value.indexOf){
+     if(email.value.indexOf('@') == -1 ||email.value.indexOf('.')== -1){
          txtEmail.innerHTML = 'E-mail inválido'
          txtEmail.style.color = 'red'
+         emailOk = false
      }else{
         txtEmail.innerHTML = 'E-mail inválido'
         txtEmail.style.color = 'green'
@@ -44,10 +45,12 @@ function
  }
 
  function validaAssunto(){
-     let txtAssunto = document.querySelector('#assunto')
-     if (txtAssunto.value.length >= 100){
+     let txtAssunto = document.querySelector('#txtAssunto')
+     if (assunto.value.length >= 100){
          txtAssunto.innerHTML = 'Texto muito grande, digite no máximo 100 caracteres'
-         txtAssunto.style.color = 'block'
+         txtAssunto.style.color = 'red'
+         txtAssunto.style.display = 'block'
+         assuntoOk = false
      }else{
          txtAssunto.style.display = 'none'
          assuntoOk = true
